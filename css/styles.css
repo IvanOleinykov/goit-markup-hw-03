@@ -5,12 +5,58 @@ body {
   letter-spacing: 0.02em;
 }
 
-ul {
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+ul,
+ol {
   list-style: none;
 }
+
+.container {
+ display: flex;
+ max-width: 1158px;
+}
+
 /*-------------------------------------------- header ------------------------------------*/
+.header-container {
+  display: flex;
+  justify-content:space-between;
+  gap: 3em;
+  padding: 1em;
+
+}
+
+.info-list {
+  display: flex;
+  gap: 1em;
+}
+
 .logo-link {
   text-decoration: none;
+  padding-top: 16px;
+  padding-right: 8px;
+  padding-bottom: 16px;
+  padding-left: 8px;
 }
 
 .logo-first-p {
@@ -36,6 +82,9 @@ ul {
 }
 
 .info-list-point {
+  padding:1px ;
+  display: block;
+  flex-direction: row;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -49,6 +98,7 @@ ul {
 }
 
 .info-a-list-point {
+  padding: 2em;
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
@@ -64,9 +114,13 @@ ul {
 /*------------------------------------------ hero ------------------------------------*/
 .hero-section {
   background-color: #2e2f42;
+  padding:16em 8em 16em 8em;
+  flex-direction: column;
 }
 
 .hero-title {
+  margin: auto;
+  max-width: 
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -76,6 +130,7 @@ ul {
 }
 
 .hero-button {
+  display: flex;
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
