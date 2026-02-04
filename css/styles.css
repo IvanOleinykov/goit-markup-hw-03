@@ -33,17 +33,16 @@ ol {
 }
 
 .container {
- display: flex;
- max-width: 1158px;
+  width: 1158px;
+  margin: 0 auto;
 }
 
 /*-------------------------------------------- header ------------------------------------*/
 .header-container {
   display: flex;
-  justify-content:space-between;
-  gap: 3em;
-  padding: 1em;
-
+  justify-content: space-between;
+  padding: 1em 7em;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .info-list {
@@ -82,7 +81,7 @@ ol {
 }
 
 .info-list-point {
-  padding:1px ;
+  padding: 1px;
   display: block;
   flex-direction: row;
   font-size: 16px;
@@ -111,16 +110,20 @@ ol {
   color: #404bbf;
 }
 
+/*------------------------------------------ section ------------------------------------*/
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /*------------------------------------------ hero ------------------------------------*/
 .hero-section {
   background-color: #2e2f42;
-  padding:16em 8em 16em 8em;
+  padding: 16em 8em 16em 8em;
   flex-direction: column;
 }
 
 .hero-title {
-  margin: auto;
-  max-width: 
+  margin: 0 auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -130,7 +133,9 @@ ol {
 }
 
 .hero-button {
-  display: flex;
+  display: block;
+  margin: 10px auto;
+  padding: 16px 32px;
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -145,6 +150,32 @@ ol {
   background-color: #404bbf;
 }
 /*------------------------------------- features section -----------------------*/
+.feature-list {
+  display: flex;
+}
+
+.feature {
+  width: 260px;
+  margin-right: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+.features-t {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .features-point-title {
   font-weight: 500;
@@ -165,7 +196,14 @@ ol {
   background-color: #f4f4fd;
 }
 
+.team-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
 .team-title {
+  padding-bottom: 80px;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
@@ -175,6 +213,12 @@ ol {
 
 .team-p {
   background-color: #ffffff;
+  padding-bottom: 32px;
+  width: 264;
+}
+
+.team-photo {
+  width: 264px;
 }
 
 .team-name {
@@ -195,11 +239,27 @@ ol {
 /*--------------------------------------- portfolio section --------------------------------*/
 
 .portfolio-main {
+  padding-bottom: 47px;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
   line-height: 1.11;
   text-align: center;
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  border:1px;
+  gap: 23px;
+  padding:32px 16px;
+  justify-content: ;
+}
+
+.porfolio-p{
+  padding:32px 16px;
+  border-radius: 1px;
+  gap:8px
 }
 
 .portfolio-title {
@@ -219,9 +279,18 @@ ol {
 
 .last-section {
   background-color: #2e2f42;
+  padding: 130px 1px;
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+
+.footer-container{
+  margin-left: 193px;
 }
 
 .logo-second-f-p {
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 18px;
@@ -233,7 +302,10 @@ ol {
 }
 
 .footer-text {
+  align-self: self-start;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
+  
 }
